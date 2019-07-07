@@ -1,13 +1,26 @@
-# Обработка сигналов
+# SIGSEGV Handler
+SIGSEGV handler is a simple segmentation fault handler.
+This is an educational project, aimed at understanding how to handle with segmentation fault.
 
-Необходимо написать обработчик сигнала SIGSEGV. Обработчик должен:
- * Дампить значения general purpose регистров, соответствуюших моменту падения
- * Дампить память поблизости от адреса, по которому произошло нарушение защиты памяти
+## What does it do?
+* Dumps values of general purpose registers, corresponding to the fall moment;
+* Dumps memory near the address where the memory protection violation occurred
 
-Стоит быть готовым, что:
- * Адрес, по которому был сгенерирован SIGSEGV - NULL
- * Адрес, по которому был сгенерирован SIGSEGV - находится на границе валидной памяти и нет
 
-## Что может помочь при выполнении задания?
- * man 2 sigaction
- * man 2 getcontext
+## Build
+```
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+```
+Requires C++14 compiler
+
+## Test
+Tested manually on Linux 4.12.
+
+## Copyright
+Pavel Ponomarev, 2019 (pavponn@gmail.com)
+
+MIT License.
+
