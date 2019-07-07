@@ -4,7 +4,7 @@ This is an educational project, aimed at understanding how to handle with segmen
 
 ## What does it do?
 * Dumps values of general purpose registers, corresponding to the fall moment;
-* Dumps memory near the address where the memory protection violation occurred
+* Dumps memory near the address where the memory protection violation occurred.
 
 
 ## Build
